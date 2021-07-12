@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START GAMES</title>
+  </head>
+  <body>
+    <a href="colorScreen.html"><button id="btn">START</button></a>
+  </body>
+
+  <style>
+    * {
+      user-select: none;
+    }
+    body {
+      display: flex;
+      height: 90vh;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+    body button {
+      width: 200px;
+      height: 70px;
+      background: black;
+      color: white;
+      font-family: fantasy;
+      font-size: 2.5em;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+    }
+    body button:hover {
+      background: white;
+      color: black;
+      border: 2px solid black;
+      transition: 0.3s;
+    }
+    body button:active {
+      transform: scale(0.9);
+      transition: 0.3s;
+    }
+  </style>
+
+  <script src="main.js"></script>
+</html>
