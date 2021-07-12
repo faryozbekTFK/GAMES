@@ -5,7 +5,7 @@ let hasFlippedCard = false;
 let firsCard, secondCard;
 
 function flipCard() {
-  this.classList.add('flip');
+  this.classList.add("flip");
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firsCard = this;
@@ -15,14 +15,14 @@ function flipCard() {
   }
   console.log(firsCard, secondCard);
   if (firsCard.dataset.framework === secondCard.dataset.framework) {
-    firsCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
+    firsCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
   } else {
     setTimeout(() => {
-      firsCard.classList.remove('flip');
-      secondCard.classList.remove('flip');
+      firsCard.classList.remove("flip");
+      secondCard.classList.remove("flip");
     }, 1500);
   }
 }
 
-CARDS.forEach((card) => card.addEventListener('click', flipCard));
+CARDS.forEach((card) => card.addEventListener("click", flipCard));

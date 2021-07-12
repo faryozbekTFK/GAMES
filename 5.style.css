@@ -1,72 +1,67 @@
-*{user-select: none;}
-body{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0;
+* {
+  user-select: none;
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
 }
 
 button {
-    width: 400px;
-    height: 80px;
-    border: 3px solid black;
-    border-radius: 20px;
-    color: black;
-    background-color: white;
-    font-size: 3em;
-    font-family: cursive;
-    font-weight: bold;
+  width: 400px;
+  height: 80px;
+  border: 3px solid black;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  font-size: 3em;
+  font-family: cursive;
+  font-weight: bold;
 }
-button:hover{
-    background-color: black;
-    color: white;
-    transform: scale(0.95);
-    transition: 0.5s;
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(0.95);
+  transition: 0.5s;
 }
 
 .gameList {
-    display: grid;
-    grid-template: repeat(4, 170px) / repeat(4, 120px);
+  display: grid;
+  grid-template: repeat(4, 170px) / repeat(4, 120px);
 }
 
-
-.minCont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 150px;
-    border: 3px solid black;
-    border-radius: 10px;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: 0.5s;
+.minCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 150px;
+  border: 3px solid black;
+  border-radius: 10px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: 0.5s;
 }
-.imgs{
-    position: relative;
-    width: 100px;
-    height: 150px;
-    padding: 5px;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
+.imgs {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  padding: 5px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 h1 {
-    position: absolute;
-    perspective: 1000px;
-    backface-visibility: hidden;
+  position: absolute;
+  perspective: 1000px;
+  backface-visibility: hidden;
 }
-.minCont:active{
-    transform: scale(0.97);
-    transition: 0.3s;
+.minCont:active {
+  transform: scale(0.97);
+  transition: 0.3s;
 }
-.minCont.flip{
-    transform: rotateY(180deg);
+.minCont.flip {
+  transform: rotateY(180deg);
 }
-
-
-
-
-
-
