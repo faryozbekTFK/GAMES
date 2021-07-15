@@ -8,7 +8,6 @@ const INTERVAL = document.getElementById("interval");
 const NOTVALUE = document.getElementById("notValue");
 const INTERVALCOUNT = document.getElementById("countIntervalVal");
 const TIMECOUNT = document.getElementById("countTimeVal");
-
 let resultValue = 0,
   incC = 0,
   decC = 0,
@@ -20,7 +19,6 @@ let resultValue = 0,
   secIntC = 0,
   firTimC = 0,
   secTimC = 0;
-
 
 function decrements() {
   if (INTERVAL.value) {
