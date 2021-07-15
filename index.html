@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IncDec</title>
+  </head>
+  <body>
+    <h1 id="result">0</h1>
+    <div class="btns">
+      <button id="decrement">
+        decrement
+        <div id="countDec" class="count">0</div>
+      </button>
+      <button id="increment">
+        increment
+        <div id="countInc" class="count">0</div>
+      </button>
+    </div>
+    <form>
+      <div class="inputs">
+        <div class="inpCont">
+          <label for="time">TIME</label>
+          <input type="number" id="time" placeholder="0" />
+          <div id="countTimeVal" class="count">0</div>
+        </div>
+        <div class="inpCont">
+          <label for="interval">INTERVAL</label>
+          <input type="number" id="interval" placeholder="0" />
+          <div id="countIntervalVal" class="count">0</div>
+          <span id="notValue"></span>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="main.js"></script>
+</html>
