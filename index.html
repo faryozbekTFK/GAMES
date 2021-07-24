@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>START GAME</title>
+  </head>
+  <body>
+    <a href="nineOne.html"
+      ><button>
+        Small
+        <div>9/1</div>
+      </button></a
+    >
+    <a href="nineThree.html"
+      ><button>
+        Medium
+        <div>9/3</div>
+      </button></a
+    >
+    <a href="sixteenFour.html"
+      ><button>
+        Large
+        <div>16/4</div>
+      </button></a
+    >
+  </body>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: #410b76;
+    }
+    a {
+      text-decoration-line: none;
+    }
+    button {
+      width: 500px;
+      height: 100px;
+      margin-top: 15px;
+      background: #9041ce;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      font-size: 3em;
+    }
+    button div {
+      width: 125px;
+      height: 75px;
+      background: #410b76;
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+    }
+    button:hover {
+      border: 1px solid;
+      transition: 0.3s;
+      animation: btn_hover 0.5s linear 0s infinite;
+    }
+    button:active {
+      animation: btn_active 0.1s linear 0s infinite;
+    }
+
+    @keyframes btn_hover {
+      0% { 
+        transform: scale(1);
+        border: 1px solid;
+      }
+      50% {
+        transform: scale(0.99);
+      }
+      100% {
+        transform: scale(1);
+        border: 3px solid orchid;
+      }
+    }
+
+    @keyframes btn_active {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(1deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      75% {
+        transform: rotate(-1deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</html>
