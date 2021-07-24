@@ -1,0 +1,595 @@
+body{margin: 0;}
+*{user-select: none;}
+.navbar{
+    display: grid;
+    overflow: hidden;
+    position: fixed;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 8% 84% 8%;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(14, 14, 14);}
+.phone{
+    display: flex;
+    align-self: center;
+    justify-self: end;
+    margin-right: 15px;}
+.icon{  
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    justify-self: end;}
+.icon:hover{filter: invert(100%);}
+.phonenumber{
+    font-size: 1.2rem;
+    color: gray;
+    font-family: Arial;}
+.contact{
+    display: flex;}
+.mail{
+    width: 1265px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;}
+.email{
+    font-size: 1.2rem;
+    color: gray;
+    font-family: Arial;}
+.messengers{
+    display: flex;
+    justify-items: space-between;
+    column-gap: 20px;
+    align-self: center;}
+.lang{
+    display: grid;
+    padding: 3px;
+    align-self: center;
+    justify-items: center;
+    border-radius: 10px;
+    background-color: red;
+    color: white;}
+.lang:active{color: rgb(14, 14, 14);}
+.body{
+    display: grid;
+    width: auto;
+    grid-template-rows: auto auto 500px;
+    gap: 5px;}
+.menu{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 8% 84% 8%;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    width: auto;
+    height: 60px;}
+.menyu{
+    width: 1265px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.logo{
+    width: auto;
+    height: 45px;
+    margin-right: 15px;}
+.menustyle{
+    display: flex;
+    font-size: 1.3rem;
+    font-family: Arial;
+    font-weight: 500;
+    justify-self: end;
+    column-gap: 30px;}
+.men:hover{color: red;}
+.list{
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+    width: auto;}
+.lis1{background-image: url("img/redtextura.jpg");
+      background-attachment: fixed;
+      color: white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      justify-items: center;
+      align-items: center;}
+.t1{
+    font-size: 4rem;
+    font-family: Arial;
+    vertical-align: 25px;
+    font-weight: bold;}
+.t2{
+    font-size: 3rem;
+    font-family: Arial;
+    vertical-align: 15px; 
+    font-weight: 500;}
+.but1{
+    width: 320px;
+    height: 70px;
+    background-color: rgba(255, 0, 0, 0.473);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: none;
+    outline: none;}
+.but1:active{
+    transition: 0.5s;
+    transform: scale(0.95);}
+.l1{
+    width: 1265px;
+    display: flex;
+    justify-content: space-between;}
+.account{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(5, 15%);
+    width: 450px;
+    height: 400px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 15px;
+    background-color: white;}
+.inf{
+    display: grid;
+    justify-items: center;}
+.info{
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: Arial;
+    color: black;}
+.line{
+    width: 90px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: red;}
+.input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(240, 240, 240);}
+.butt{
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    font-family: Arial;
+    background-color: rgba(255, 0, 0, 0.808);}
+.butt:active{
+    transition: 0.5s;
+    transform: scale(0.95);}
+.lis2{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding-top: 20px;
+    justify-items: center;
+    align-items: center;}
+.haqimizda{
+    justify-self: center;
+    font-size: 2rem;
+    font-family: Arial;
+    font-weight:  bolder;}
+.naqsh{
+    width: 200px;
+    margin-top: 10px;
+    justify-self: center;}
+.ll2{
+    display: flex;
+    width: 1265px;
+    justify-content: space-between;
+    column-gap: 40px;}
+.img1{
+    width: 600px;
+    height: 380px;}
+.starttext{
+    color: red;
+    font-family: Arial;}
+.alltext{
+    width: 600px;
+    font-size: 17px;
+    display: grid;
+    color: rgb(102, 102, 102);
+    text-align: justify;}
+.butt1{
+    width: 280px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border-color: red;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.2rem;}
+.butt1:active{
+    transition: 0.5s;
+    transform: scale(0.95);}
+.lis3{
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        justify-items: center;
+        align-items: center;
+        background-image: url("img/blacktextura.jpg");
+        background-attachment: fixed;
+        width: 100%;}
+.boxes{
+    width: 1265px;
+    display: flex;
+    justify-content: space-between;}
+.box{
+    display: grid;
+    grid-template-rows: 55% 20% 20%;
+    width: 390px;
+    height: 350px;
+    justify-items: center;
+    align-items: center;
+    background-color: white;}
+.im1{
+    display: grid;
+    width: 100px;
+    height: 100px;
+    justify-items: center;
+    align-items: center;
+    border-style: groove;
+    border-width: 1px;
+    border-color: gray;}
+.im2{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: red;}
+.pics{
+    width: 40px;
+    height: 40px;}
+.metr1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Arial;
+    margin-top: 2px;}
+.met1{
+    font-size: 1.5rem;
+    font-family: Arial;
+    color: rgb(180, 180, 180);}
+.lis4{
+    display: grid;
+    grid-template-rows: 15% 83% 10%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    justify-items: center;}
+.product{
+    font-size: 1.8rem;
+    font-family: Arial;
+    color: white;
+    font-weight: bolder;
+    text-align: center;}
+.prod{
+    font-size: 1.8rem;
+    color: black;}
+.boxxes1{
+    display: flex;
+    width: 1265px;
+    justify-self: center;
+    justify-content: space-between;
+    padding-top: 30px;}
+.boxx{
+    width: 260px;
+    height: 190px;
+    background-color: white;
+    display: grid;
+    justify-content: space-evenly;}
+.trans{
+    width: 250px;
+    height: 180px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;}
+.boxx:hover{
+    transform: scale(1.1);
+    transition: 0.8s;}
+.buut1{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    background-color: black;
+    margin-left: 25px;
+    margin-top: 150px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 0.6rem;}
+.buut1:hover{
+    filter: invert(100%);
+    transition: 0.5s;}
+.buut1:active{
+    transition: 0.5s;
+    transform: scale(0.95);}
+.allcatalog{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;}
+.allcatalog:hover{
+    background-color: tomato;
+    transition: 0.5s;}
+.allcatalog:active{
+    transition: 0.5s;
+    transform: scale(0.95);}
+.lis5{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-items: center;
+    background-color: black;}
+.llis{
+    display: flex;
+    width: 1265px;
+    justify-content: space-between;
+    margin-top: 30px;}
+.listt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: white;}
+.listt:hover{
+    filter: opacity(100%);
+    background-color: red;
+    transition: 0.9s;
+    color: white;
+    background-position: center;
+    background-position-y: 180px;
+    background-size: 150px;
+    background-repeat: no-repeat;}
+/* .listt:hover + .imgs{
+    filter: invert(100%);} */
+.tt1:hover{
+    background-image: url("img/medal\ —\ копия.png");}
+.tt2:hover{
+    background-image: url("img/boy\ —\ копия.png");}
+.tt3:hover{
+    background-image: url("img/girl\ —\ копия.png");}
+.tt4:hover{
+    background-image: url("img/moto\ —\ копия.png");}
+.imgs{
+    margin-top: -40px;
+    width: 90px;
+    height: 90px;}
+.texx{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: Arial;
+    font-weight: bolder;
+    text-align: center;}
+.teex{
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bolder;}
+.lis6{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    padding-top: 35px;
+    justify-items: center;}
+.lllis{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;}
+.women{
+    width: 500px;
+    height: 580px;}
+.account1{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 5% repeat(4, 13%);
+    box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.548);
+    width: 350px;
+    height: 440px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 15px;
+    background-color: white;}
+.info1{text-align: center;}
+.line1{
+    width: 60px;
+    height: 5px;
+    margin-top: 10px;
+    background-color: red;}
+.input1{
+    width: 100%;
+    height: 110%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    background-color: rgb(240, 240, 240);}
+.butt2{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 3px;
+    font-family: Arial;
+    background-color: rgba(255, 0, 0, 0.808);}
+.butt2:active{
+    transition: 0.5s;
+    transform: scale(0.95);}
+.lis7{
+    display: grid;
+    height: 250px;
+    grid-template-rows: auto auto 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-items: center;
+    background-color: black;}
+.lliiss{
+    display: flex;
+    justify-content: space-between;
+    width: 1265px;}
+.bbooxx{
+    display: grid;
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;}
+.bimgs1{
+    width: 120px;
+    height: 30px;}
+.bimgs2{
+    width: 80px;
+    height: 70px;}
+.bimgs3{
+    width: 90px;
+    height: 70px;}
+.bimgs4{
+    width: 120px;
+    height: 45px;}
+.bimgs5{
+    width: 120px;
+    height: 40px;}
+.scroll{
+    display: grid;
+    justify-items: center;
+    align-items: center;}
+.scrolll{
+    width: 100px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;}
+.scrol{
+    width: 25px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;}
+.scrol:hover{background-color: rgb(71, 71, 71);}
+.scrol:active{
+    width: 35px;
+    background-color: red;}
+.lis8{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    justify-items: center;}
+.asos{
+    width: 1265px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+.asosiy1{
+    width: 280px;
+    height: 400px;
+    display: grid;
+    row-gap: 25px;
+    justify-content: end;}
+.ong{
+    display: grid;
+    justify-items: end;
+    justify-content: end;}
+.bbox{
+    display: grid;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-content: center;
+    background-color: red;}
+.iimg{
+    width: 50px;
+    height: 50px;}
+.ongtext{
+    font-size: 1.1rem;
+    font-family: Arial;
+    text-align: right;}
+.mypic{
+    width: 500px;
+    height: 500px;}
+.asosiy2{
+    width: 280px;
+    height: 400px;
+    display: grid;
+    row-gap: 25px;
+    justify-content: start;}
+.bottombox{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 550px;
+    height: 180px;
+    background-color: red;}
+.iimmg{
+    width: 30px;
+    height: 30px;}
+.tteexx{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;}
+.lis9{
+    display: grid;
+    justify-items: center;
+    align-items: center;}
+.asosiy3{
+    width: 480px;
+    height: 340px;
+    display: grid;
+    row-gap: 25px;}
+.bboxx{
+    display: grid;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+    background-color: red;}
+.chap1{
+    display: flex;
+    align-items: center;
+    width: auto;}
+.chaptext{
+    font-size: 1rem;
+    margin-left: 10px;}
+.vid{
+    display: flex;
+    width: 1265px;
+    justify-content: space-between;
+    align-items: center;}
+.map{
+    width: 550px;
+    height: 270px;}
+.lis10{
+    display: grid;
+    width: auto;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;}
+.end{
+    display: grid;
+    justify-items: center;
+    align-items: center;}
+.VTlogo{
+    width: 200px;
+    height: 100px;}
+.endtext{
+    font-size: 1rem;
+    color: gray;}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.75 8.00291H3.925L8.4625 2.55291C8.67467 2.29764 8.77675 1.96854 8.74628 1.638C8.7158 1.30747 8.55527 1.00258 8.3 0.790408C8.04473 0.578235 7.71563 0.476157 7.3851 0.506632C7.05456 0.537107 6.74967 0.697637 6.5375 0.952908L0.2875 8.45291C0.245451 8.51256 0.207849 8.57523 0.175 8.64041C0.175 8.70291 0.175 8.74041 0.0875002 8.80291C0.0308421 8.94623 0.0011764 9.0988 0 9.25291C0.0011764 9.40702 0.0308421 9.55958 0.0875002 9.70291C0.0875002 9.76541 0.0874998 9.80291 0.175 9.86541C0.207849 9.93058 0.245451 9.99325 0.2875 10.0529L6.5375 17.5529C6.65503 17.694 6.8022 17.8075 6.96856 17.8853C7.13491 17.963 7.31636 18.0032 7.5 18.0029C7.79207 18.0035 8.07511 17.9018 8.3 17.7154C8.42657 17.6105 8.5312 17.4816 8.60789 17.3362C8.68458 17.1907 8.73183 17.0316 8.74692 16.8679C8.76202 16.7042 8.74466 16.5391 8.69586 16.3821C8.64705 16.2251 8.56775 16.0792 8.4625 15.9529L3.925 10.5029H18.75C19.0815 10.5029 19.3995 10.3712 19.6339 10.1368C19.8683 9.90237 20 9.58443 20 9.25291C20 8.92139 19.8683 8.60345 19.6339 8.36902C19.3995 8.1346 19.0815 8.00291 18.75 8.00291Z" fill="#F53838"/>
+</svg>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

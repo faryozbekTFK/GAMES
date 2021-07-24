@@ -1,0 +1,438 @@
+body{
+    margin: 0;}
+*{
+    user-select: none;
+    transition: 0.5s;}
+.body{
+    display: inline;
+    justify-items: center;
+}
+.navbar{
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1fr;
+    height: 80px;}
+.logo{
+    display: flex;
+    align-items: center;}
+.logosvg{
+    width: 30px;
+    height: 30px;}
+.logotext{
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: Rubik;}
+.logovpntext{
+    font-weight: bold;}
+.menu{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-family: Rubik;}
+.men:hover{
+    color: orangered;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration-line: underline;}
+.hamburger{
+    display: none;
+    width: 30px;
+    height: 30px;}
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;}
+.butt{
+    width:100px;
+    padding: 7px  10px;
+    font-weight: bold;
+    color: black;
+    outline: none;
+    background: none;
+    border: none;}
+.butt:hover{
+    border: 2px solid orangered;
+    border-radius: 25px;
+    color: orangered;}
+.list1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;}
+.list1text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;}
+.list1tex1{
+    font-size: 75px;}
+.lvpn{font-weight: bold;}
+.list1tex2{
+    font-size: 22px;
+    margin-top: 30px;}
+.list2butt{
+    width: 200px;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 6px 8px rgba(255, 0, 0, 0.349);
+    outline: none;
+    border: none;
+    background-color: #F53838;}
+.list1img{
+    width: 45vw;}
+.list3{
+    display: flex;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.281);
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;}
+.lis3{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;}
+.box{
+    width: 200px;
+    display: flex;
+    align-items: center;}
+.rec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #f538384f;}
+.vec{
+    width: 15px;
+    height: 15px;}
+.list3tex{
+    font-size: 15px;
+    font-family: Rubik;
+    padding-left: 15px;}
+.t1{
+    font-size: 20px;
+    font-weight: bold;}
+.line{
+    width: 3px;
+    height: 110px;
+    background-color: rgb(212, 212, 212);}
+.list4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;}
+.list4img{
+    z-index: -1;
+    width: 45vw;}
+.list4text{
+    padding-left: 50px;
+    width: 45vw;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;}
+.list4tex1{
+    font-size: 60px;
+    font-weight: bolder;}
+.list4tex2{
+    padding-top: 20px;
+    font-size: 27px;}
+.list4tex3{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;}
+.metka{padding-right: 10px;}
+.list5{
+    margin-bottom: 50px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    align-items: center;}
+.list5tex1{
+    font-size: 60px;
+    margin: 20px 0px;
+    font-weight: bold;}
+.list5tex2{
+    width: 900px;
+    font-size: 27px;
+    margin: 20px 0px;
+    text-align: center;}
+.boxes{
+    margin-top: 20px;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;}
+.boxs{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    align-items: center;
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 15px;
+    background-color: white;}
+.planimg{
+    width: 120px;
+    height: 120px;
+    margin-top: 50px;}
+.ptex{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;}
+.plancont{
+    display: grid;
+    grid-template-rows: repeat(9, 35px);}
+.plan{font-size: 15px;}
+.metka2{margin-right: 10px;}
+.price{
+    text-align: center;
+    font-family: Arial;
+    font-size: 22px;}
+.val{font-weight: bold;}
+.selectbut{
+    justify-self: center;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid red;
+    background: none;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;}
+.selectbut:hover{
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 2px 5px 5px rgba(255, 0, 0, 0.384);}
+.list6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.list6tex1{
+    width: 550px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;}
+.list6tex2{
+    width: 500px;
+    padding: 20px 0px;
+    text-align: center;}
+.list6img{
+    width: 900px;
+    height: 500px;}
+.list7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;}
+.logos{
+    width: 300px;
+    height: 60px;}
+.list8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list8tex1{
+    width: 610px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;}
+.list8tex2{
+    width: 590px;
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;}
+.bboxx{
+    width: 1000px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;}
+.bbox{
+    width: 300px;
+    height: 170px;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;}
+.bbox:hover{
+    border-color: red;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);}
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;}
+.data{
+    display: flex;
+    align-items: center;}
+.about{
+    padding-left: 10px;
+    font-size: 13px;}
+.fio{
+    font-size: 18px;
+    font-weight: bolder;}
+.about1{
+    display: flex;
+    padding: 10px;
+    text-align: justify;
+    font-size: 13px;}
+.scrolls{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;}
+.scroll1{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;}
+.scr{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: gray;}
+.scr:hover{
+    width: 20px;
+    background-color: red;}
+.scroll2{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;}
+.scrbut{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 3px solid red;
+    border-radius: 100%;}
+.ong{transform: rotate(180deg);}
+.scrbut:hover{
+    background-color: rgb(255, 116, 116);
+    border-color: rgb(255, 116, 116);}
+.list9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;}
+.lis9{
+    width: 950px;
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.37);
+}
+.list9text{
+    display: grid;}
+.list9tex1{
+    width: 300px;
+    font-size: 30px;}
+.list9tex2{
+    font-size: 18px;
+    padding-top: 10px;}
+
+
+
+
+    /*    MEDIA YOZISH     */
+@media screen and (max-width: 880px) {
+.menu{display: none;}
+.hamburger{display: block;}
+.button{width: 150px;}
+.butt{
+    width: 70px;
+    padding: 3px 6px;}
+.list1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.list1text{
+    display: flex;
+    align-items: center;}
+.list1tex1{
+    font-size: 40px;
+    text-align: center;}
+.list1tex2{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;}
+.list2butt{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;}
+.list1img{margin-top: 10px;}
+.lis3{width: 600px;}
+.box{width: 150px;}
+.line{
+    width: 3px;
+    height: 80px;}
+.list4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.list4text{
+    padding-left: 0px;
+}
+.list4tex1{
+    text-align: center;
+    font-size: 40px;}
+.list4tex2{
+    text-align: center;
+    font-size: 17px;}
+.list4tex3{
+    font-size: 15px;
+    padding-left: 35px;}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;}
+.list5tex1{
+    font-size: 40px;}
+.list5tex2{
+    width: 500px;}
+.list6tex1{
+    width: 350px;
+    font-size: 30px;}
+.list6tex2{
+    width: 300px;
+    font-size: 15px;
+    text-align: center;}
+.list6img{
+    width: 400px;
+    height: 220px;}
+.list7{padding: 30px 50px;}
+.logos{
+    width: 60px;
+    height: 50px;}
+.list8tex1{
+    width: 350px;
+    font-size: 20px;}
+.list8tex2{
+    width: 300px;
+    font-size: 15px;}
+.bboxx{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+.scrolls{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;}
+
+
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
