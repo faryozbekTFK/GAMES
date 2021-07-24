@@ -26,3 +26,13 @@ NEXT.addEventListener("click", () => {
     console.log(idx);
   }
 });
+CIR.forEach((circle, index) => {
+  circle.onclick = function () {
+    idx = index;
+    CIR[idxOld].classList.remove("cirActive");
+    circle.classList.add("cirActive");
+    IMGS[idxOld].classList.remove("imgActive");
+    IMGS[idx].classList.add("imgActive");
+    idxOld = idx;
+  };
+});

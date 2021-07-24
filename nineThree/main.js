@@ -33,3 +33,13 @@ function removeClassList() {
   CIR[idxOld].classList.remove("cirActive");
   CONTMIN[idxOld].classList.remove("contActive");
 }
+CIR.forEach((circle, index) => {
+  circle.onclick = function () {
+    idx = index;
+    CIR[idxOld].classList.remove("cirActive");
+    circle.classList.add("cirActive");
+    CONTMIN[idxOld].classList.remove("contActive");
+    CONTMIN[idx].classList.add("contActive");
+    idxOld = idx;
+  };
+});
