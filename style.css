@@ -59,6 +59,12 @@ a h2 {
   bottom: 10px;
   right: 30px;
 }
+a h3 {
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    font-size: 1.5em;
+}
 .logo {
   width: 70px;
   height: 70px;
