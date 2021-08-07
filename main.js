@@ -3,7 +3,7 @@ const LOADBTN = document.getElementById("loading");
 const REFBTN = document.getElementById("refresh");
 const LOADTEXT = document.getElementById("loadText");
 let IMGS = [],
-  id = 0,
+  idImg = 0,
   time = 2000;
 function addImage(img) {
   console.log("Calling addImage Method");
@@ -30,10 +30,10 @@ function loadImg(url, callback) {
 }
 
 LOADBTN.addEventListener("click", () => {
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
   LOADBTN.disabled = "false";
   LOADBTN.style.cursor = "no-drop";
   LOADBTN.style.background = "gray";
@@ -49,10 +49,10 @@ REFBTN.addEventListener("click", () => {
   REFBTN.style.cursor = "no-drop";
   for (let i = 0; i < IMGS.length; i++) IMGS[i].style.display = "none";
   LOADTEXT.style.display = "flex";
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
-  loadImg(`https://picsum.photos/id/${id++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
+  loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage);
   setTimeout(() => {
     REFBTN.style.background = "red";
     REFBTN.style.cursor = "pointer";

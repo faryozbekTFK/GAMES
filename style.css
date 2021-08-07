@@ -8,12 +8,18 @@ body {
   height: 100vh;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   background: var(--gray);
 }
-#box {
+.minCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box {
   position: relative;
   width: 430px;
   height: 410px;
@@ -21,15 +27,18 @@ body {
   grid-template: repeat(2, auto) / repeat(2, auto);
   gap: 10px;
   align-items: center;
+  align-content: flex-end;
   justify-content: center;
   justify-items: center;
   overflow: hidden;
 }
-#box h4 {
-  font-size: 2em;
+.box h4 {
+  font-size: 3em;
   font-family: cursive;
   font-weight: bold;
   position: absolute;
+  color: #fff;
+  text-shadow: 2px 2px black;
 }
 .btn {
   width: 200px;
@@ -60,10 +69,10 @@ a h2 {
   right: 30px;
 }
 a h3 {
-    position: absolute;
-    left: 30px;
-    bottom: 10px;
-    font-size: 1.5em;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  font-size: 1.5em;
 }
 .logo {
   width: 70px;
