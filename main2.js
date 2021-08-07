@@ -60,9 +60,9 @@ REFBTN.forEach((btnRef, idx) => {
     loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage, BOX[idx], LOADTEXT[idx]);
     loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage, BOX[idx], LOADTEXT[idx]);
     loadImg(`https://picsum.photos/id/${idImg++}/200/200`, addImage, BOX[idx], LOADTEXT[idx]) ;
-    // btnRef.disabled = "false";
+    btnRef.disabled = true;
     setTimeout(() => {
-      // btnRef.disabled = "true";
+      btnRef.disabled = false;
       btnRef.style.cursor = "pointer";
       btnRef.style.background = "red";
   }, time + 500);
