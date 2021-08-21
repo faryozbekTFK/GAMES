@@ -1,5 +1,6 @@
 const MOUSECOOR = document.getElementById("mouseCoor");
 const RESULT = document.getElementById("result");
+const TRIANGLE = document.getElementById("aboutTriangle");
 const canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 let xM,
@@ -23,23 +24,27 @@ class drawTriangle {
       y2 = y + 150,
       x3 = x + 190,
       y3 = y + 150;
+      TRIANGLE.innerText += ` (${x1}, ${y1}); (${x2}, ${y2}); (${x3}, ${y3});
+      `
     let uchbur = { x1, y1, x2, y2, x3, y3 };
     console.log(uchbur);
     lines.push(uchbur);
   }
 }
-
 console.log("1-uchburchak:");
+TRIANGLE.innerText += '1-uchburchak: ';
 const uch1 = new drawTriangle(
   Math.trunc(Math.random() * 200),
   Math.trunc(Math.random() * 200)
-);
-console.log("2-uchburchak:");
-const uch2 = new drawTriangle(
+  );
+  TRIANGLE.innerText += '2-uchburchak: ';
+  console.log("2-uchburchak:");
+  const uch2 = new drawTriangle(
   Math.trunc(Math.random() * 200),
   Math.trunc(Math.random() * 200)
-);
-console.log("3-uchburchak:");
+  );
+  TRIANGLE.innerText += '3-uchburchak: ';
+  console.log("3-uchburchak:");
 const uch3 = new drawTriangle(
   Math.trunc(Math.random() * 200),
   Math.trunc(Math.random() * 200)
@@ -86,6 +91,7 @@ canvas.onmousedown = (xM, yM) => {
   } else {
     RESULT.innerText = "Nuqta uchburchakda yotmaydi.";
   }
+
   console.log("allArea: ", allArea);
   console.log("allMinAreaSum: ", allMinAreaSum);
   allArea = [];
