@@ -1,12 +1,12 @@
-import "./App.css";
+import "./style/footer-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import facebook from "./imgs/facebook.svg";
-import twitter from "./imgs/twitter.svg";
-import telegram from "./imgs/telegram.svg";
-import instagram from "./imgs/instagram.svg";
+import facebook from "./footer-icons/facebook.svg";
+import twitter from "./footer-icons/twitter.svg";
+import telegram from "./footer-icons/telegram.svg";
+import instagram from "./footer-icons/instagram.svg";
 
-function App() {
+function Footer() {
   return (
     <footer className="footer bg-dark d-flex align-items-center">
       <div className="about d-flex flex-column">
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default Footer;
